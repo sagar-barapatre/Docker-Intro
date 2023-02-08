@@ -1,11 +1,11 @@
-1. docker login
-2. docker build -t <your_docker_username>/<project_name_of_your_choice>:0.0.1.RELEASE .
-3. docker conatiner ls
+1. `docker login`
+2. `docker build -t <your_docker_username>/<project_name_of_your_choice>:0.0.1.RELEASE .`
+3. `docker conatiner ls`
 // Above command will show you an empty table
-4. docker container run -d -p 4000:4000 diethrone/docker-intro-project:0.0.1.RELEASE
+4. `docker container run -d -p 4000:4000 diethrone/docker-intro-project:0.0.1.RELEASE`
 // first 4000 is your local port which is written on app.js file and second 4000 is for the docker-port(that should be empty to run the container)
 //After running above command, it should console some big long string. Something similar to this - 53cef41a67e02f0c37cbd3e3f219240855c9555a1bc037a4e88dc3a460757298
-5. docker ps
+5. `docker ps`
 //Running this command should show a table with one entry(if you haven't run any conatiner) containing CONTAINER ID and various fields.
 
 
